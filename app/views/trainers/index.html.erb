@@ -1,0 +1,37 @@
+<div class="row">
+  <div class="col-sm-6">
+    <h3>Trainers</h3>
+  </div>
+  <div class="col-sm-6">
+    <%= link_to 'Tokimons', tokimons_path, class:"btn btn-default pull-right", style: "margin-left:10px;margin-top:10px;" %>
+    <%= link_to '+ New Trainer', new_trainer_path, class:"btn btn-warning pull-right", style: "margin-top:10px;" %>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-12">
+    <table class="table table-striped">
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Level</th>
+        <th>Tokimons</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+
+      <% @trainers.each do |trainer| %>
+      <tr>
+        <td><%= trainer.name rescue "" %></td>
+        <td><%= trainer.email rescue "" %></td>
+        <td><%= trainer.level rescue ""%></td>
+        <td><%= trainer.tokimons.size rescue ""%></td>
+        <td><%= link_to 'View', trainer %></td>
+        <td><%= link_to 'Edit', edit_trainer_path(trainer) %></td>
+        <td><%= link_to 'Delete', trainer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+      <% end %>
+    </table>
+  </div>
+</div>

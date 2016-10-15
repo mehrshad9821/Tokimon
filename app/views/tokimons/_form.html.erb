@@ -1,0 +1,105 @@
+
+<%= form_for(@tokimon, html: {class:"form-horizontal"}) do |f| %>
+<% if @tokimon.errors.any? %>
+<div id="error_explanation" class="<%= 'well' if @tokimon.errors.present? %>">
+  <h4><%= pluralize(@tokimon.errors.count, "error") %> prohibited this tokimon from being saved:</h4>
+
+  <ul>
+    <% @tokimon.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="field">
+      <%= f.label :name, class: "control-label"  %><br />
+      <%= f.text_field :name, class: "form-control", required: true %>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="field">
+      <%= f.label :trainer_id , class: "control-label" %><br />
+      <%= f.select :trainer_id, Trainer.all.map{|t| [t.name,t.id] }, {}, {class: 'form-control', style: "color:red;"} %>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-3">
+    <div class="field">
+      <%= f.label :weight, class: "control-label" %><br />
+      <%= f.number_field :weight, class: "form-control" %>
+    </div>
+    <div class="field">
+      <%= f.label :height, class: "control-label" %><br />
+      <%= f.number_field :height, class: "form-control"  %>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="field">
+      <%= f.label :fly, class: "control-label" %><br />
+      <%= f.number_field :fly, class: "form-control ability", min: 0, max: 100  %>
+    </div>
+    <div class="field">
+      <%= f.label :fight, class: "control-label" %><br />
+      <%= f.number_field :fight, class: "form-control ability", min: 0, max: 100  %>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="field">
+      <%= f.label :fire, class: "control-label" %><br />
+      <%= f.number_field :fire, class: "form-control ability", min: 0, max: 100  %>
+    </div>
+    <div class="field">
+      <%= f.label :water, class: "control-label" %><br />
+      <%= f.number_field :water, class: "form-control ability", min: 0, max: 100  %>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="field">
+      <%= f.label :electric, class: "control-label" %><br />
+      <%= f.number_field :electric, class: "form-control ability", min: 0, max: 100  %>
+    </div>
+    <div class="field">
+      <%= f.label :frozen_or_ice, class: "control-label" %><br />
+      <%= f.number_field :frozen_or_ice, class: "form-control ability", min: 0, max: 100  %>
+    </div>
+    <div class="field">
+      <%= f.label :total, class: "control-label" %><br />
+      <%= f.number_field :total, class: "form-control total_ability", style:"background-color:lightgrey;" %>
+    </div>
+  </div>
+</div>
+
+
+<div class="actions">
+  <%= f.submit class: "btn btn-primary" %>
+</div>
+<% end %>
+
+<script>
+$(document).on("ready",function(){
+  $('.ability').on('input',function(e){
+    total_abilities();
+  });
+});
+
+function total_abilities(){
+  var sum = 0;
+  $('.ability').each(function(){
+    v = $(this).val();
+    if(v.length == 0 || isNaN(v)) {
+      v = 0.0;
+      console.log("nan")
+    }
+    else{
+      sum += parseInt(v);
+    }
+  });
+  $(".total_ability").val(sum);
+}
+</script>
+

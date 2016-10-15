@@ -1,0 +1,53 @@
+<div class="row">
+  <div class="col-sm-6">
+    <h3>Tokimons</h3>
+  </div>
+  <div class="col-sm-6">
+    <%= link_to 'Trainers', trainers_path, class:"btn btn-default pull-right", style: "margin-left:10px;margin-top:10px;" %>
+    <%= link_to '+ New Tokimon', new_tokimon_path, class:"btn btn-primary pull-right", style: "margin-top:10px;" %>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-12">
+    <table class="table table-striped">
+      <tr>
+        <th>Name</th>
+        <th>Weight</th>
+        <th>Height</th>
+        <th>Fly</th>
+        <th>Fight</th>
+        <th>Fire</th>
+        <th>Water</th>
+        <th>Electric</th>
+        <th>Frozen or ice</th>
+        <th>Total</th>
+        <th>Trainer</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+
+      <% @tokimons.each do |tokimon| %>
+      <tr>
+        <td><%= tokimon.name %></td>
+        <td><%= tokimon.weight %></td>
+        <td><%= tokimon.height %></td>
+        <td><%= tokimon.fly %></td>
+        <td><%= tokimon.fight %></td>
+        <td><%= tokimon.fire %></td>
+        <td><%= tokimon.water %></td>
+        <td><%= tokimon.electric %></td>
+        <td><%= tokimon.frozen_or_ice %></td>
+        <td><%= tokimon.total %></td>
+        <td><%= tokimon.trainer.name rescue "" %></td>
+        <td><%= link_to 'View', tokimon %></td>
+        <td><%= link_to 'Edit', edit_tokimon_path(tokimon) %></td>
+        <td><%= link_to 'Delete', tokimon, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+      <% end %>
+    </table>
+  </div>
+</div>
+
+    <%= link_to 'Display', display_tokimons_path, class:"btn btn-warning pull-right", style: "margin-left:10px;margin-top:10px;" %>

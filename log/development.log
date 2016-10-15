@@ -1,0 +1,909 @@
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-13 20:53:31 -0700
+Processing by TokimonsController#index as HTML
+  [1m[36mTokimon Load (0.1ms)[0m  [1mSELECT "tokimons".* FROM "tokimons" [0m
+  [1m[35mTrainer Load (0.1ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  Rendered tokimons/index.html.erb within layouts/application (285.1ms)
+Completed 500 Internal Server Error in 554ms
+
+ActionView::Template::Error (undefined method `user_signed_in?' for #<#<Class:0x0000010247ab50>:0x00000102478c10>):
+    9: <body>
+    10: 
+    11:   <div class="container">
+    12:     <!-- <% if user_signed_in? %>
+    13:       Signed in as <%= current_user.name %>. Not you?
+    14:     <%= link_to "Sign out", destroy_user_session_path,:method => :delete %>
+    15:     <% else %>
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__3291069752268020713_2174337480'
+  app/controllers/tokimons_controller.rb:8:in `index'
+
+
+  Rendered /Users/akhil/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/akhil/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/akhil/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-13 20:54:00 -0700
+Processing by TokimonsController#index as HTML
+  [1m[36mTokimon Load (0.3ms)[0m  [1mSELECT "tokimons".* FROM "tokimons" [0m
+  [1m[35mTrainer Load (0.1ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  Rendered tokimons/index.html.erb within layouts/application (16.7ms)
+Completed 500 Internal Server Error in 42ms
+
+ActionView::Template::Error (undefined method `user_signed_in?' for #<#<Class:0x0000010247ab50>:0x00000106abd888>):
+    9: <body>
+    10: 
+    11:   <div class="container">
+    12:     <!-- <% if user_signed_in? %>
+    13:       Signed in as <%= current_user.name %>. Not you?
+    14:     <%= link_to "Sign out", destroy_user_session_path,:method => :delete %>
+    15:     <% else %>
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__3291069752268020713_2174337480'
+  app/controllers/tokimons_controller.rb:8:in `index'
+
+
+  Rendered /Users/akhil/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/akhil/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/akhil/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-13 20:54:23 -0700
+Processing by TokimonsController#index as HTML
+  [1m[36mTokimon Load (0.2ms)[0m  [1mSELECT "tokimons".* FROM "tokimons" [0m
+  [1m[35mTrainer Load (0.1ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  Rendered tokimons/index.html.erb within layouts/application (14.1ms)
+Completed 500 Internal Server Error in 39ms
+
+ActionView::Template::Error (undefined method `user_signed_in?' for #<#<Class:0x0000010247ab50>:0x00000106e90cd0>):
+    9: <body>
+    10: 
+    11:   <div class="container">
+    12:     <!-- <% if user_signed_in? %>
+    13:       Signed in as <%= current_user.name %>. Not you?
+    14:     <%= link_to "Sign out", destroy_user_session_path,:method => :delete %>
+    15:     <% else %>
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__3291069752268020713_2174337480'
+  app/controllers/tokimons_controller.rb:8:in `index'
+
+
+  Rendered /Users/akhil/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/akhil/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/akhil/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.0ms)
+
+
+Started GET "/tokimons" for 127.0.0.1 at 2016-10-13 20:54:27 -0700
+Processing by TokimonsController#index as HTML
+  [1m[36mTokimon Load (0.2ms)[0m  [1mSELECT "tokimons".* FROM "tokimons" [0m
+  [1m[35mTrainer Load (0.1ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  Rendered tokimons/index.html.erb within layouts/application (14.8ms)
+Completed 500 Internal Server Error in 42ms
+
+ActionView::Template::Error (undefined method `user_signed_in?' for #<#<Class:0x0000010247ab50>:0x000001027764d0>):
+    9: <body>
+    10: 
+    11:   <div class="container">
+    12:     <!-- <% if user_signed_in? %>
+    13:       Signed in as <%= current_user.name %>. Not you?
+    14:     <%= link_to "Sign out", destroy_user_session_path,:method => :delete %>
+    15:     <% else %>
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__3291069752268020713_2174337480'
+  app/controllers/tokimons_controller.rb:8:in `index'
+
+
+  Rendered /Users/akhil/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/akhil/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/akhil/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.5ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-13 21:58:54 -0700
+Processing by TokimonsController#index as HTML
+  [1m[36mTokimon Load (0.1ms)[0m  [1mSELECT "tokimons".* FROM "tokimons" [0m
+  [1m[35mTrainer Load (0.1ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  Rendered tokimons/index.html.erb within layouts/application (37.9ms)
+Completed 500 Internal Server Error in 131ms
+
+ActionView::Template::Error (undefined method `user_signed_in?' for #<#<Class:0x0000010347e1f0>:0x0000010347c9e0>):
+    9: <body>
+    10: 
+    11:   <div class="container">
+    12:     <!-- <% if user_signed_in? %>
+    13:       Signed in as <%= current_user.name %>. Not you?
+    14:     <%= link_to "Sign out", destroy_user_session_path,:method => :delete %>
+    15:     <% else %>
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__38959692296193571_2158572640'
+  app/controllers/tokimons_controller.rb:8:in `index'
+
+
+  Rendered /Users/akhil/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/akhil/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/akhil/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-13 21:59:32 -0700
+Processing by TokimonsController#index as HTML
+  [1m[36mTokimon Load (0.2ms)[0m  [1mSELECT "tokimons".* FROM "tokimons" [0m
+  [1m[35mTrainer Load (0.1ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  Rendered tokimons/index.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:32 -0700
+Served asset /scaffolds.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/homes.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:32 -0700
+Served asset /homes.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tokimons.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:32 -0700
+Served asset /tokimons.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:32 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:32 -0700
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/trainers.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:32 -0700
+Served asset /trainers.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:32 -0700
+Served asset /bootstrap.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/homes.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:32 -0700
+Served asset /homes.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tokimons.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:32 -0700
+Served asset /tokimons.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:32 -0700
+Served asset /bootstrap.min.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/trainers.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:32 -0700
+Served asset /trainers.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:32 -0700
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:32 -0700
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/tokimons/new" for 127.0.0.1 at 2016-10-13 21:59:34 -0700
+Processing by TokimonsController#new as HTML
+  [1m[36mTrainer Load (0.2ms)[0m  [1mSELECT "trainers".* FROM "trainers" [0m
+  Rendered tokimons/_form.html.erb (72.6ms)
+  Rendered tokimons/new.html.erb within layouts/application (115.0ms)
+Completed 200 OK in 121ms (Views: 120.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:35 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:35 -0700
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/homes.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:35 -0700
+Served asset /homes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tokimons.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:35 -0700
+Served asset /tokimons.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/trainers.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:35 -0700
+Served asset /trainers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:35 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:35 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:35 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:35 -0700
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/homes.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:35 -0700
+Served asset /homes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tokimons.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:35 -0700
+Served asset /tokimons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trainers.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:35 -0700
+Served asset /trainers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:35 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/tokimons" for 127.0.0.1 at 2016-10-13 21:59:39 -0700
+Processing by TokimonsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mbUiuASrLWoCqw0W7gmORC5XOgBNlVxQW31w1aIeYbA=", "tokimon"=>{"name"=>"Ak", "trainer_id"=>"4", "weight"=>"1", "height"=>"1", "fly"=>"", "fight"=>"", "fire"=>"", "water"=>"", "electric"=>"", "frozen_or_ice"=>"", "total"=>""}, "commit"=>"Create Tokimon"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "tokimons" WHERE "tokimons"."name" = 'Ak'[0m
+  [1m[35mSQL (2.9ms)[0m  INSERT INTO "tokimons" ("created_at", "electric", "fight", "fire", "fly", "frozen_or_ice", "height", "name", "total", "trainer_id", "updated_at", "water", "weight") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Fri, 14 Oct 2016 04:59:39 UTC +00:00], ["electric", nil], ["fight", nil], ["fire", nil], ["fly", nil], ["frozen_or_ice", nil], ["height", 1], ["name", "Ak"], ["total", nil], ["trainer_id", 4], ["updated_at", Fri, 14 Oct 2016 04:59:39 UTC +00:00], ["water", nil], ["weight", 1]]
+  [1m[36mTrainer Load (0.1ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "tokimons" WHERE "tokimons"."trainer_id" = 4
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "tokimons" WHERE "tokimons"."trainer_id" = 4[0m
+  [1m[35m (44.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/tokimons/26
+Completed 302 Found in 66ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tokimons/26" for 127.0.0.1 at 2016-10-13 21:59:39 -0700
+Processing by TokimonsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mTokimon Load (0.2ms)[0m  [1mSELECT "tokimons".* FROM "tokimons" WHERE "tokimons"."id" = ? LIMIT 1[0m  [["id", "26"]]
+  [1m[35mTrainer Load (0.2ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  Rendered tokimons/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/trainers.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:39 -0700
+Served asset /trainers.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/homes.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:39 -0700
+Served asset /homes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:39 -0700
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:39 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tokimons.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:39 -0700
+Served asset /tokimons.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:39 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:39 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:39 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:39 -0700
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/homes.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:39 -0700
+Served asset /homes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tokimons.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:39 -0700
+Served asset /tokimons.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/trainers.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:39 -0700
+Served asset /trainers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:39 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/tokimons" for 127.0.0.1 at 2016-10-13 21:59:40 -0700
+Processing by TokimonsController#index as HTML
+  [1m[36mTokimon Load (0.2ms)[0m  [1mSELECT "tokimons".* FROM "tokimons" [0m
+  [1m[35mTrainer Load (0.1ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  Rendered tokimons/index.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 25ms (Views: 24.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:40 -0700
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:40 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/homes.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:40 -0700
+Served asset /homes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trainers.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:40 -0700
+Served asset /trainers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:40 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tokimons.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:40 -0700
+Served asset /tokimons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:40 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:40 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:40 -0700
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/homes.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:40 -0700
+Served asset /homes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tokimons.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:40 -0700
+Served asset /tokimons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trainers.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:40 -0700
+Served asset /trainers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:40 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/trainers" for 127.0.0.1 at 2016-10-13 21:59:41 -0700
+Processing by TrainersController#index as HTML
+  [1m[35mTrainer Load (0.1ms)[0m  SELECT "trainers".* FROM "trainers" 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "tokimons" WHERE "tokimons"."trainer_id" = 4[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "tokimons" WHERE "tokimons"."trainer_id" = 5
+  Rendered trainers/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:41 -0700
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:41 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tokimons.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:41 -0700
+Served asset /tokimons.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/trainers.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:41 -0700
+Served asset /trainers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:41 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/homes.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:41 -0700
+Served asset /homes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:41 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:41 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:41 -0700
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tokimons.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:41 -0700
+Served asset /tokimons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/homes.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:41 -0700
+Served asset /homes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:41 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trainers.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:41 -0700
+Served asset /trainers.js - 304 Not Modified (0ms)
+
+
+Started GET "/tokimons" for 127.0.0.1 at 2016-10-13 21:59:43 -0700
+Processing by TokimonsController#index as HTML
+  [1m[36mTokimon Load (0.2ms)[0m  [1mSELECT "tokimons".* FROM "tokimons" [0m
+  [1m[35mTrainer Load (0.1ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  Rendered tokimons/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:43 -0700
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:43 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trainers.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:43 -0700
+Served asset /trainers.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/homes.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:43 -0700
+Served asset /homes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:43 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tokimons.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:43 -0700
+Served asset /tokimons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:43 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:43 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:43 -0700
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/homes.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:43 -0700
+Served asset /homes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tokimons.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:43 -0700
+Served asset /tokimons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trainers.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:43 -0700
+Served asset /trainers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:43 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/tokimons/display" for 127.0.0.1 at 2016-10-13 21:59:44 -0700
+Processing by TokimonsController#display as HTML
+  [1m[35mTokimon Load (0.2ms)[0m  SELECT "tokimons".* FROM "tokimons" 
+  Rendered tokimons/display.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 48ms (Views: 46.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:44 -0700
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/homes.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:45 -0700
+Served asset /homes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:45 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:45 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trainers.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:45 -0700
+Served asset /trainers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tokimons.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:45 -0700
+Served asset /tokimons.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:45 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:45 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:45 -0700
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/homes.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:45 -0700
+Served asset /homes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tokimons.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:45 -0700
+Served asset /tokimons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trainers.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:45 -0700
+Served asset /trainers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:45 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/tokimons" for 127.0.0.1 at 2016-10-13 21:59:46 -0700
+Processing by TokimonsController#index as HTML
+  [1m[36mTokimon Load (0.2ms)[0m  [1mSELECT "tokimons".* FROM "tokimons" [0m
+  [1m[35mTrainer Load (0.1ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "trainers".* FROM "trainers" WHERE "trainers"."id" = 4 LIMIT 1[0m
+  Rendered tokimons/index.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 26ms (Views: 24.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/homes.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:46 -0700
+Served asset /homes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trainers.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:46 -0700
+Served asset /trainers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:46 -0700
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:46 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tokimons.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:46 -0700
+Served asset /tokimons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-10-13 21:59:46 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:46 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:46 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:46 -0700
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/homes.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:46 -0700
+Served asset /homes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tokimons.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:46 -0700
+Served asset /tokimons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trainers.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:46 -0700
+Served asset /trainers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-10-13 21:59:46 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (5.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (1.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTrainers (20161013175528)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "trainers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "level" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20161013175528')[0m
+  [1m[35m (0.9ms)[0m  commit transaction
+Migrating to CreateTokimons (20161013175552)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "tokimons" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "weight" integer, "height" integer, "fly" integer, "fight" integer, "fire" integer, "water" integer, "electric" integer, "frozen_or_ice" integer, "total" integer, "trainer_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20161013175552')[0m
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-13 22:32:19 -0700
+Processing by TokimonsController#index as HTML
+  [1m[36mTokimon Load (0.1ms)[0m  [1mSELECT "tokimons".* FROM "tokimons" [0m
+  Rendered tokimons/index.html.erb within layouts/application (2.4ms)
+Compiled bootstrap.min.css  (0ms)  (pid 62786)
+Warning. Error encountered while saving cache /Users/akhil/dev/local/tokimonstracker/tmp/cache/sass/12fd0f24a150d1713fd9f32ed16ec77b7e8ae8ba/homes.css.scssc: can't dump anonymous class #<Class:0x000001013a4718>
+
+Compiled homes.css  (3ms)  (pid 62786)
+Warning. Error encountered while saving cache /Users/akhil/dev/local/tokimonstracker/tmp/cache/sass/12fd0f24a150d1713fd9f32ed16ec77b7e8ae8ba/scaffolds.css.scssc: can't dump anonymous class #<Class:0x000001013a4718>
+
+Compiled scaffolds.css  (2ms)  (pid 62786)
+Warning. Error encountered while saving cache /Users/akhil/dev/local/tokimonstracker/tmp/cache/sass/12fd0f24a150d1713fd9f32ed16ec77b7e8ae8ba/tokimons.css.scssc: can't dump anonymous class #<Class:0x000001013a4718>
+
+Compiled tokimons.css  (1ms)  (pid 62786)
+Warning. Error encountered while saving cache /Users/akhil/dev/local/tokimonstracker/tmp/cache/sass/12fd0f24a150d1713fd9f32ed16ec77b7e8ae8ba/trainers.css.scssc: can't dump anonymous class #<Class:0x000001013a4718>
+
+Compiled trainers.css  (1ms)  (pid 62786)
+Compiled application.css  (47ms)  (pid 62786)
+Compiled jquery.js  (5ms)  (pid 62786)
+Compiled jquery_ujs.js  (0ms)  (pid 62786)
+Compiled bootstrap.min.js  (0ms)  (pid 62786)
+Compiled homes.js  (221ms)  (pid 62786)
+Compiled tokimons.js  (108ms)  (pid 62786)
+Compiled trainers.js  (113ms)  (pid 62786)
+Compiled application.js  (549ms)  (pid 62786)
+Completed 200 OK in 708ms (Views: 684.4ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/assets/tokimons.css?body=1" for 127.0.0.1 at 2016-10-13 22:32:20 -0700
+Served asset /tokimons.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/homes.css?body=1" for 127.0.0.1 at 2016-10-13 22:32:20 -0700
+Served asset /homes.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2016-10-13 22:32:20 -0700
+Served asset /bootstrap.min.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-10-13 22:32:20 -0700
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/trainers.css?body=1" for 127.0.0.1 at 2016-10-13 22:32:20 -0700
+Served asset /trainers.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-10-13 22:32:20 -0700
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-10-13 22:32:20 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-10-13 22:32:20 -0700
+Served asset /bootstrap.min.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/homes.js?body=1" for 127.0.0.1 at 2016-10-13 22:32:20 -0700
+Served asset /homes.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tokimons.js?body=1" for 127.0.0.1 at 2016-10-13 22:32:20 -0700
+Served asset /tokimons.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/trainers.js?body=1" for 127.0.0.1 at 2016-10-13 22:32:20 -0700
+Served asset /trainers.js - 304 Not Modified (1ms)
+
+
+Started GET "/tokimons/new" for 127.0.0.1 at 2016-10-13 22:32:21 -0700
+Processing by TokimonsController#new as HTML
+  [1m[35mTrainer Load (0.1ms)[0m  SELECT "trainers".* FROM "trainers" 
+  Rendered tokimons/_form.html.erb (127.5ms)
+  Rendered tokimons/new.html.erb within layouts/application (162.0ms)
+Completed 200 OK in 175ms (Views: 166.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2016-10-13 22:32:21 -0700
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-10-13 22:32:21 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/homes.css?body=1" for 127.0.0.1 at 2016-10-13 22:32:21 -0700
+Served asset /homes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tokimons.css?body=1" for 127.0.0.1 at 2016-10-13 22:32:21 -0700
+Served asset /tokimons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trainers.css?body=1" for 127.0.0.1 at 2016-10-13 22:32:21 -0700
+Served asset /trainers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-10-13 22:32:21 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-10-13 22:32:21 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-10-13 22:32:21 -0700
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/homes.js?body=1" for 127.0.0.1 at 2016-10-13 22:32:21 -0700
+Served asset /homes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tokimons.js?body=1" for 127.0.0.1 at 2016-10-13 22:32:21 -0700
+Served asset /tokimons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trainers.js?body=1" for 127.0.0.1 at 2016-10-13 22:32:21 -0700
+Served asset /trainers.js - 304 Not Modified (0ms)
+
+
+Started POST "/tokimons" for 127.0.0.1 at 2016-10-13 22:32:30 -0700
+Processing by TokimonsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mbUiuASrLWoCqw0W7gmORC5XOgBNlVxQW31w1aIeYbA=", "tokimon"=>{"name"=>"A", "weight"=>"1", "height"=>"1", "fly"=>"", "fight"=>"", "fire"=>"", "water"=>"", "electric"=>"", "frozen_or_ice"=>"", "total"=>""}, "commit"=>"Create Tokimon"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "tokimons" WHERE "tokimons"."name" = 'A'
+  [1m[36mSQL (23.1ms)[0m  [1mINSERT INTO "tokimons" ("created_at", "electric", "fight", "fire", "fly", "frozen_or_ice", "height", "name", "total", "trainer_id", "updated_at", "water", "weight") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 14 Oct 2016 05:32:30 UTC +00:00], ["electric", nil], ["fight", nil], ["fire", nil], ["fly", nil], ["frozen_or_ice", nil], ["height", 1], ["name", "A"], ["total", nil], ["trainer_id", nil], ["updated_at", Fri, 14 Oct 2016 05:32:30 UTC +00:00], ["water", nil], ["weight", 1]]
+  [1m[35m (0.5ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 38ms
+
+NoMethodError (undefined method `tokimons' for nil:NilClass):
+  app/models/tokimon.rb:11:in `update_level'
+  app/controllers/tokimons_controller.rb:30:in `create'
+
+
+  Rendered /Users/akhil/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /Users/akhil/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/akhil/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.6ms)
